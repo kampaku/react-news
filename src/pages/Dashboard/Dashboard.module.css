@@ -1,0 +1,31 @@
+.app {
+  display: grid;
+  grid-template-areas:
+    '. title .'
+    '. bar .'
+    '. cards .'
+    '. pagination .';
+  grid-template-columns: auto minmax(320px, 1200px) auto;
+  gap: 50px;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  background-color: #292442;
+}
+
+.news {
+  grid-area: cards;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 3rem;
+  grid-area: title;
+  justify-self: center;
+  color: var(--font-light);
+}
+
+.pagination {
+  grid-area: pagination;
+  justify-self: center;
+}

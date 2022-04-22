@@ -1,0 +1,50 @@
+.wrap {
+  display: grid;
+  grid-area: bar;
+  width: 100%;
+  color: var(--font-light);
+  place-items: center;
+}
+
+.form {
+  display: grid;
+  gap: 30px;
+  width: 100%;
+  place-items: center;
+}
+
+.searchOptions {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  justify-self: left;
+}
+
+.bar {
+  display: grid;
+  grid-template-columns: 1fr 35px;
+  width: 400px;
+  height: 45px;
+  background-color: var(--white-color);
+  border: 5px solid var(--main-color);
+  place-content: stretch;
+  place-items: stretch;
+}
+
+.bar:focus-within {
+  outline: 3px solid violet;
+}
+
+.bar svg {
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
+.input {
+  padding: 0 20px;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}

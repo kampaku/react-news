@@ -1,0 +1,30 @@
+@import './font.css';
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--font-dark);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  line-height: 1.4;
+}
+
+:root {
+  --main-color: #3dd9eb;
+  --second-color: #6d19ffa9;
+  --white-color: #fff;
+  --font-light: #e4f1fe;
+  --font-dark: #141414;
+  --border-color: #4985eb;
+  --font-family: 'Play', sans-serif;
+  --font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  background-color: #292442;
+}

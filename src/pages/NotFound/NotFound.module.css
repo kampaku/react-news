@@ -1,0 +1,13 @@
+.page {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  grid-auto-flow: row;
+  color: var(--font-light);
+  min-height: 100vh;
+}
+
+.link {
+  color: var(--second-color);
+  display: inline;
+}

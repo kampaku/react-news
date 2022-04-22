@@ -1,0 +1,47 @@
+.img {
+  width: 100%;
+  min-width: 100%;
+  max-width: fit-content;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  background-color: var(--main-color);
+  border: 5px solid var(--border-color);
+
+  /* max-width: 320px; */
+}
+
+.description {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    'title title'
+    'text text'
+    'author author'
+    'date date';
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  padding: 20px;
+}
+
+.title {
+  grid-area: title;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.author {
+  grid-area: author;
+}
+
+.date {
+  grid-area: date;
+  justify-self: end;
+}
+
+.text {
+  grid-area: text;
+  margin-bottom: 20px;
+}
